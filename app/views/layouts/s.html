@@ -1,0 +1,337 @@
+<body class="d-flex flex-column h-100">
+  <main>
+    <div class="mt-4 mb-5 pb-5">
+      <div class="container">
+        <div class="p-4 align-items-center border shadow bg-white rounded-3">
+          <div class="row">
+            <div class="p-3 p-lg-5 pt-lg-0">
+              <div class="mb-4">
+                <h2>Объявления</h2>
+                <hr>
+              </div>
+              <div class="p-3 bg-light">
+                <form class="bulletin_search" id="bulletin_search" action="/bulletins" accept-charset="UTF-8"
+                  method="get">
+                  <div class="row my-2">
+                    <div class="col-6">
+                      <div class="form-group mb-3 string required q_title_cont"><input
+                          class="form-control string required" type="text" name="q[title_cont]" id="q_title_cont"><small
+                          class="form-text text-muted">Искать по названию объявления</small></div>
+                    </div>
+                    <div class="col-4">
+                      <div class="form-group mb-3 select required q_category_id_eq"><select
+                          class="form-control select required" name="q[category_id_eq]" id="q_category_id_eq">
+                          <option value="" label=" "></option>
+                          <option value="1">Личные вещи</option>
+                          <option value="2">Транспорт</option>
+                          <option value="3">Работа</option>
+                          <option value="4">Для дома и дачи</option>
+                          <option value="5">Недвижимость</option>
+                          <option value="6">Хобби и отдых</option>
+                          <option value="7">Электроника</option>
+                          <option value="8">Животные</option>
+                        </select><small class="form-text text-muted">Выбрать категорию</small></div>
+                    </div>
+                    <div class="col-2"><input type="submit" name="commit" value="Искать" class="btn btn-primary me-2"
+                        data-disable-with="Искать"><a class="btn btn-outline-primary" href="/">Сброс</a></div>
+                  </div>
+                </form>
+              </div>
+              <div class="row mt-2">
+                <div class="col-3 pt-2">
+                  <div class="card shadow-sm"><img height="200" class="card-img-top x-object-fit-cover"
+                      src="https://rails-bulletin-board-ru.hexlet.app/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBdkZvIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--7095a402a712fb4aa140d77d6da980e2dad3b990/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJYW5CbkJqb0dSVlE2RkhKbGMybDZaVjkwYjE5c2FXMXBkRnNIYVFLUUFUQT0iLCJleHAiOm51bGwsInB1ciI6InZhcmlhdGlvbiJ9fQ==--c5e4fe5c315d37208f0aad777051c5c1e875c2af/bulletin_17.jpg">
+                    <div class="card-body"><a href="/bulletins/23835">
+                        <h5 class="card-title">7064 Coffee</h5>
+                      </a>
+                      <h6 class="card-subtitle mb-2 text-muted">7 минут</h6>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-3 pt-2">
+                  <div class="card shadow-sm"><img height="200" class="card-img-top x-object-fit-cover"
+                      src="https://rails-bulletin-board-ru.hexlet.app/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBdTlvIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--e1daa5dec875cd0415cf574b1fd1ed8c4fa94916/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJYW5CbkJqb0dSVlE2RkhKbGMybDZaVjkwYjE5c2FXMXBkRnNIYVFLUUFUQT0iLCJleHAiOm51bGwsInB1ciI6InZhcmlhdGlvbiJ9fQ==--c5e4fe5c315d37208f0aad777051c5c1e875c2af/bulletin_15.jpg">
+                    <div class="card-body"><a href="/bulletins/23833">
+                        <h5 class="card-title">Salty Creamery</h5>
+                      </a>
+                      <h6 class="card-subtitle mb-2 text-muted">7 минут</h6>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-3 pt-2">
+                  <div class="card shadow-sm"><img height="200" class="card-img-top x-object-fit-cover"
+                      src="https://rails-bulletin-board-ru.hexlet.app/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBdWhvIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--61fc4cca89846408c2b03e9c5366e36c61acc6cd/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJYW5CbkJqb0dSVlE2RkhKbGMybDZaVjkwYjE5c2FXMXBkRnNIYVFLUUFUQT0iLCJleHAiOm51bGwsInB1ciI6InZhcmlhdGlvbiJ9fQ==--c5e4fe5c315d37208f0aad777051c5c1e875c2af/bulletin_8.jpg">
+                    <div class="card-body"><a href="/bulletins/23826">
+                        <h5 class="card-title">Belly Creamery</h5>
+                      </a>
+                      <h6 class="card-subtitle mb-2 text-muted">7 минут</h6>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-3 pt-2">
+                  <div class="card shadow-sm"><img height="200" class="card-img-top x-object-fit-cover"
+                      src="https://rails-bulletin-board-ru.hexlet.app/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBdVJvIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--4dba19dd675784ad0791d956e692fe31488aa68d/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJYW5CbkJqb0dSVlE2RkhKbGMybDZaVjkwYjE5c2FXMXBkRnNIYVFLUUFUQT0iLCJleHAiOm51bGwsInB1ciI6InZhcmlhdGlvbiJ9fQ==--c5e4fe5c315d37208f0aad777051c5c1e875c2af/bulletin_4.jpg">
+                    <div class="card-body"><a href="/bulletins/23822">
+                        <h5 class="card-title">Sweet Eats</h5>
+                      </a>
+                      <h6 class="card-subtitle mb-2 text-muted">7 минут</h6>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-3 pt-2">
+                  <div class="card shadow-sm"><img height="200" class="card-img-top x-object-fit-cover"
+                      src="https://rails-bulletin-board-ru.hexlet.app/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBdUZvIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--7292e7ded2bec97c8ba0c3573df0a5d508af080a/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJYW5CbkJqb0dSVlE2RkhKbGMybDZaVjkwYjE5c2FXMXBkRnNIYVFLUUFUQT0iLCJleHAiOm51bGwsInB1ciI6InZhcmlhdGlvbiJ9fQ==--c5e4fe5c315d37208f0aad777051c5c1e875c2af/bulletin_1.jpg">
+                    <div class="card-body"><a href="/bulletins/23819">
+                        <h5 class="card-title">Golden Diner</h5>
+                      </a>
+                      <h6 class="card-subtitle mb-2 text-muted">7 минут</h6>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-3 pt-2">
+                  <div class="card shadow-sm"><img height="200" class="card-img-top x-object-fit-cover"
+                      src="https://rails-bulletin-board-ru.hexlet.app/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBc1ZvIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--a1da75e6bf227fccf684f8e10373dc9571485f41/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJYW5CbkJqb0dSVlE2RkhKbGMybDZaVjkwYjE5c2FXMXBkRnNIYVFLUUFUQT0iLCJleHAiOm51bGwsInB1ciI6InZhcmlhdGlvbiJ9fQ==--c5e4fe5c315d37208f0aad777051c5c1e875c2af/bulletin_18.jpg">
+                    <div class="card-body"><a href="/bulletins/23816">
+                        <h5 class="card-title">Fast Box</h5>
+                      </a>
+                      <h6 class="card-subtitle mb-2 text-muted">около 1 часа</h6>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-3 pt-2">
+                  <div class="card shadow-sm"><img height="200" class="card-img-top x-object-fit-cover"
+                      src="https://rails-bulletin-board-ru.hexlet.app/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBc05vIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--89362e20e955813d912287c50dd0fe034beb4251/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJYW5CbkJqb0dSVlE2RkhKbGMybDZaVjkwYjE5c2FXMXBkRnNIYVFLUUFUQT0iLCJleHAiOm51bGwsInB1ciI6InZhcmlhdGlvbiJ9fQ==--c5e4fe5c315d37208f0aad777051c5c1e875c2af/bulletin_16.jpg">
+                    <div class="card-body"><a href="/bulletins/23814">
+                        <h5 class="card-title">Spice Brasserie</h5>
+                      </a>
+                      <h6 class="card-subtitle mb-2 text-muted">около 1 часа</h6>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-3 pt-2">
+                  <div class="card shadow-sm"><img height="200" class="card-img-top x-object-fit-cover"
+                      src="https://rails-bulletin-board-ru.hexlet.app/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBcnhvIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--1bd298755864c11f1e1c8a90b273bd70714c96e7/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJYW5CbkJqb0dSVlE2RkhKbGMybDZaVjkwYjE5c2FXMXBkRnNIYVFLUUFUQT0iLCJleHAiOm51bGwsInB1ciI6InZhcmlhdGlvbiJ9fQ==--c5e4fe5c315d37208f0aad777051c5c1e875c2af/bulletin_9.jpg">
+                    <div class="card-body"><a href="/bulletins/23807">
+                        <h5 class="card-title">1101 Cafe</h5>
+                      </a>
+                      <h6 class="card-subtitle mb-2 text-muted">около 1 часа</h6>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-3 pt-2">
+                  <div class="card shadow-sm"><img height="200" class="card-img-top x-object-fit-cover"
+                      src="https://rails-bulletin-board-ru.hexlet.app/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBcnRvIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--a5051cfa83053252aa392ba536aa16ef629a29e1/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJYW5CbkJqb0dSVlE2RkhKbGMybDZaVjkwYjE5c2FXMXBkRnNIYVFLUUFUQT0iLCJleHAiOm51bGwsInB1ciI6InZhcmlhdGlvbiJ9fQ==--c5e4fe5c315d37208f0aad777051c5c1e875c2af/bulletin_8.jpg">
+                    <div class="card-body"><a href="/bulletins/23806">
+                        <h5 class="card-title">VDC Pizza</h5>
+                      </a>
+                      <h6 class="card-subtitle mb-2 text-muted">около 1 часа</h6>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-3 pt-2">
+                  <div class="card shadow-sm"><img height="200" class="card-img-top x-object-fit-cover"
+                      src="https://rails-bulletin-board-ru.hexlet.app/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBcmhvIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--8b518a435023ca0c42baf4bffc8503f67f063341/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJYW5CbkJqb0dSVlE2RkhKbGMybDZaVjkwYjE5c2FXMXBkRnNIYVFLUUFUQT0iLCJleHAiOm51bGwsInB1ciI6InZhcmlhdGlvbiJ9fQ==--c5e4fe5c315d37208f0aad777051c5c1e875c2af/bulletin_5.jpg">
+                    <div class="card-body"><a href="/bulletins/23803">
+                        <h5 class="card-title">Belly Grill &amp; Tap</h5>
+                      </a>
+                      <h6 class="card-subtitle mb-2 text-muted">около 1 часа</h6>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-3 pt-2">
+                  <div class="card shadow-sm"><img height="200" class="card-img-top x-object-fit-cover"
+                      src="https://rails-bulletin-board-ru.hexlet.app/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBclJvIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--5adedee09b0bc5a3d94523ee37ac0eb55c5c8663/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJYW5CbkJqb0dSVlE2RkhKbGMybDZaVjkwYjE5c2FXMXBkRnNIYVFLUUFUQT0iLCJleHAiOm51bGwsInB1ciI6InZhcmlhdGlvbiJ9fQ==--c5e4fe5c315d37208f0aad777051c5c1e875c2af/bulletin_1.jpg">
+                    <div class="card-body"><a href="/bulletins/23799">
+                        <h5 class="card-title">Red Steakhouse</h5>
+                      </a>
+                      <h6 class="card-subtitle mb-2 text-muted">около 1 часа</h6>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-3 pt-2">
+                  <div class="card shadow-sm"><img height="200" class="card-img-top x-object-fit-cover"
+                      src="https://rails-bulletin-board-ru.hexlet.app/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBckpvIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--9cf243a262fc20ce2d5a6fe13241c9cb9adeb671/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJYW5CbkJqb0dSVlE2RkhKbGMybDZaVjkwYjE5c2FXMXBkRnNIYVFLUUFUQT0iLCJleHAiOm51bGwsInB1ciI6InZhcmlhdGlvbiJ9fQ==--c5e4fe5c315d37208f0aad777051c5c1e875c2af/bulletin_17.jpg">
+                    <div class="card-body"><a href="/bulletins/23797">
+                        <h5 class="card-title">Sweet Coffee</h5>
+                      </a>
+                      <h6 class="card-subtitle mb-2 text-muted">около 1 часа</h6>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-3 pt-2">
+                  <div class="card shadow-sm"><img height="200" class="card-img-top x-object-fit-cover"
+                      src="https://rails-bulletin-board-ru.hexlet.app/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBcWxvIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--2fa1858e53886f8013e16cb3f3d583c58684c649/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJYW5CbkJqb0dSVlE2RkhKbGMybDZaVjkwYjE5c2FXMXBkRnNIYVFLUUFUQT0iLCJleHAiOm51bGwsInB1ciI6InZhcmlhdGlvbiJ9fQ==--c5e4fe5c315d37208f0aad777051c5c1e875c2af/bulletin_8.jpg">
+                    <div class="card-body"><a href="/bulletins/23788">
+                        <h5 class="card-title">Sweet Bar &amp; Grill</h5>
+                      </a>
+                      <h6 class="card-subtitle mb-2 text-muted">около 1 часа</h6>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-3 pt-2">
+                  <div class="card shadow-sm"><img height="200" class="card-img-top x-object-fit-cover"
+                      src="https://rails-bulletin-board-ru.hexlet.app/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBcUJvIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--fe6a0ab217b45d7c9174e2d4df8b427eed5c5e46/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJYW5CbkJqb0dSVlE2RkhKbGMybDZaVjkwYjE5c2FXMXBkRnNIYVFLUUFUQT0iLCJleHAiOm51bGwsInB1ciI6InZhcmlhdGlvbiJ9fQ==--c5e4fe5c315d37208f0aad777051c5c1e875c2af/bulletin_19.jpg">
+                    <div class="card-body"><a href="/bulletins/23779">
+                        <h5 class="card-title">835 Sushi</h5>
+                      </a>
+                      <h6 class="card-subtitle mb-2 text-muted">около 2 часов</h6>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-3 pt-2">
+                  <div class="card shadow-sm"><img height="200" class="card-img-top x-object-fit-cover"
+                      src="https://rails-bulletin-board-ru.hexlet.app/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBb3BvIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--9d63fa95cd3517f57a21736154d982d8c7248b76/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJYW5CbkJqb0dSVlE2RkhKbGMybDZaVjkwYjE5c2FXMXBkRnNIYVFLUUFUQT0iLCJleHAiOm51bGwsInB1ciI6InZhcmlhdGlvbiJ9fQ==--c5e4fe5c315d37208f0aad777051c5c1e875c2af/bulletin_17.jpg">
+                    <div class="card-body"><a href="/bulletins/23757">
+                        <h5 class="card-title">Blue Box</h5>
+                      </a>
+                      <h6 class="card-subtitle mb-2 text-muted">около 3 часов</h6>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-3 pt-2">
+                  <div class="card shadow-sm"><img height="200" class="card-img-top x-object-fit-cover"
+                      src="https://rails-bulletin-board-ru.hexlet.app/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBb1JvIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--ee4cf1d27d2e54a713afa7d022af011e5d7a1db9/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJYW5CbkJqb0dSVlE2RkhKbGMybDZaVjkwYjE5c2FXMXBkRnNIYVFLUUFUQT0iLCJleHAiOm51bGwsInB1ciI6InZhcmlhdGlvbiJ9fQ==--c5e4fe5c315d37208f0aad777051c5c1e875c2af/bulletin_11.jpg">
+                    <div class="card-body"><a href="/bulletins/23751">
+                        <h5 class="card-title">Sugar Curry</h5>
+                      </a>
+                      <h6 class="card-subtitle mb-2 text-muted">около 3 часов</h6>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-3 pt-2">
+                  <div class="card shadow-sm"><img height="200" class="card-img-top x-object-fit-cover"
+                      src="https://rails-bulletin-board-ru.hexlet.app/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBb05vIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--a3c5ec27f46bc6cd3e9a1e6614a1d5e02d5a0546/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJYW5CbkJqb0dSVlE2RkhKbGMybDZaVjkwYjE5c2FXMXBkRnNIYVFLUUFUQT0iLCJleHAiOm51bGwsInB1ciI6InZhcmlhdGlvbiJ9fQ==--c5e4fe5c315d37208f0aad777051c5c1e875c2af/bulletin_10.jpg">
+                    <div class="card-body"><a href="/bulletins/23750">
+                        <h5 class="card-title">Sugar Creamery</h5>
+                      </a>
+                      <h6 class="card-subtitle mb-2 text-muted">около 3 часов</h6>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-3 pt-2">
+                  <div class="card shadow-sm"><img height="200" class="card-img-top x-object-fit-cover"
+                      src="https://rails-bulletin-board-ru.hexlet.app/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBb0pvIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--7c68a8db684ddbcced1cf39dd82a9304532c47be/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJYW5CbkJqb0dSVlE2RkhKbGMybDZaVjkwYjE5c2FXMXBkRnNIYVFLUUFUQT0iLCJleHAiOm51bGwsInB1ciI6InZhcmlhdGlvbiJ9fQ==--c5e4fe5c315d37208f0aad777051c5c1e875c2af/bulletin_9.jpg">
+                    <div class="card-body"><a href="/bulletins/23749">
+                        <h5 class="card-title">Smokestack Shakes</h5>
+                      </a>
+                      <h6 class="card-subtitle mb-2 text-muted">около 3 часов</h6>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-3 pt-2">
+                  <div class="card shadow-sm"><img height="200" class="card-img-top x-object-fit-cover"
+                      src="https://rails-bulletin-board-ru.hexlet.app/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBb0ZvIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--35c85d3e05698882db59cccd0595b5adbc902b66/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJYW5CbkJqb0dSVlE2RkhKbGMybDZaVjkwYjE5c2FXMXBkRnNIYVFLUUFUQT0iLCJleHAiOm51bGwsInB1ciI6InZhcmlhdGlvbiJ9fQ==--c5e4fe5c315d37208f0aad777051c5c1e875c2af/bulletin_8.jpg">
+                    <div class="card-body"><a href="/bulletins/23748">
+                        <h5 class="card-title">Golden BBQ</h5>
+                      </a>
+                      <h6 class="card-subtitle mb-2 text-muted">около 3 часов</h6>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-3 pt-2">
+                  <div class="card shadow-sm"><img height="200" class="card-img-top x-object-fit-cover"
+                      src="https://rails-bulletin-board-ru.hexlet.app/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBbjlvIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--1d2952bd7cc3fdabcf1bbb8212c39162259aad90/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJYW5CbkJqb0dSVlE2RkhKbGMybDZaVjkwYjE5c2FXMXBkRnNIYVFLUUFUQT0iLCJleHAiOm51bGwsInB1ciI6InZhcmlhdGlvbiJ9fQ==--c5e4fe5c315d37208f0aad777051c5c1e875c2af/bulletin_6.jpg">
+                    <div class="card-body"><a href="/bulletins/23746">
+                        <h5 class="card-title">Silver Gastropub</h5>
+                      </a>
+                      <h6 class="card-subtitle mb-2 text-muted">около 3 часов</h6>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-3 pt-2">
+                  <div class="card shadow-sm"><img height="200" class="card-img-top x-object-fit-cover"
+                      src="https://rails-bulletin-board-ru.hexlet.app/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBbjVvIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--a015312b179d015007e75f245b581701b05bbab5/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJYW5CbkJqb0dSVlE2RkhKbGMybDZaVjkwYjE5c2FXMXBkRnNIYVFLUUFUQT0iLCJleHAiOm51bGwsInB1ciI6InZhcmlhdGlvbiJ9fQ==--c5e4fe5c315d37208f0aad777051c5c1e875c2af/bulletin_5.jpg">
+                    <div class="card-body"><a href="/bulletins/23745">
+                        <h5 class="card-title">36 House</h5>
+                      </a>
+                      <h6 class="card-subtitle mb-2 text-muted">около 3 часов</h6>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-3 pt-2">
+                  <div class="card shadow-sm"><img height="200" class="card-img-top x-object-fit-cover"
+                      src="https://rails-bulletin-board-ru.hexlet.app/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBbmhvIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--927c8cc7cc40ce6928b12fec4c12c96405b990f2/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJYW5CbkJqb0dSVlE2RkhKbGMybDZaVjkwYjE5c2FXMXBkRnNIYVFLUUFUQT0iLCJleHAiOm51bGwsInB1ciI6InZhcmlhdGlvbiJ9fQ==--c5e4fe5c315d37208f0aad777051c5c1e875c2af/bulletin_19.jpg">
+                    <div class="card-body"><a href="/bulletins/23739">
+                        <h5 class="card-title">Silver Deli</h5>
+                      </a>
+                      <h6 class="card-subtitle mb-2 text-muted">около 4 часов</h6>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-3 pt-2">
+                  <div class="card shadow-sm"><img height="200" class="card-img-top x-object-fit-cover"
+                      src="https://rails-bulletin-board-ru.hexlet.app/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBblJvIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--664e72109796c41b3d1981c373ffeb9c452c90bc/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJYW5CbkJqb0dSVlE2RkhKbGMybDZaVjkwYjE5c2FXMXBkRnNIYVFLUUFUQT0iLCJleHAiOm51bGwsInB1ciI6InZhcmlhdGlvbiJ9fQ==--c5e4fe5c315d37208f0aad777051c5c1e875c2af/bulletin_15.jpg">
+                    <div class="card-body"><a href="/bulletins/23735">
+                        <h5 class="card-title">Silver Curry</h5>
+                      </a>
+                      <h6 class="card-subtitle mb-2 text-muted">около 4 часов</h6>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-3 pt-2">
+                  <div class="card shadow-sm"><img height="200" class="card-img-top x-object-fit-cover"
+                      src="https://rails-bulletin-board-ru.hexlet.app/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBbk5vIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--a86f95c54a83d48e2d608b67623a0ec4972685a4/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJYW5CbkJqb0dSVlE2RkhKbGMybDZaVjkwYjE5c2FXMXBkRnNIYVFLUUFUQT0iLCJleHAiOm51bGwsInB1ciI6InZhcmlhdGlvbiJ9fQ==--c5e4fe5c315d37208f0aad777051c5c1e875c2af/bulletin_14.jpg">
+                    <div class="card-body"><a href="/bulletins/23734">
+                        <h5 class="card-title">Orange Spoon</h5>
+                      </a>
+                      <h6 class="card-subtitle mb-2 text-muted">около 4 часов</h6>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-3 pt-2">
+                  <div class="card shadow-sm"><img height="200" class="card-img-top x-object-fit-cover"
+                      src="https://rails-bulletin-board-ru.hexlet.app/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBbkpvIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--b29f6434f0f2bcf217fe5e175e455e8e5aabfe6e/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJYW5CbkJqb0dSVlE2RkhKbGMybDZaVjkwYjE5c2FXMXBkRnNIYVFLUUFUQT0iLCJleHAiOm51bGwsInB1ciI6InZhcmlhdGlvbiJ9fQ==--c5e4fe5c315d37208f0aad777051c5c1e875c2af/bulletin_13.jpg">
+                    <div class="card-body"><a href="/bulletins/23733">
+                        <h5 class="card-title">Hungry Box</h5>
+                      </a>
+                      <h6 class="card-subtitle mb-2 text-muted">около 4 часов</h6>
+                    </div>
+                  </div>
+                </div>
+                <nav class="">
+                  <ul class="pagination ">
+
+
+                    <li class="page-item active">
+                      <a class="page-link" href="/">1</a>
+                    </li>
+
+                    <li class="page-item">
+                      <a class="page-link" rel="next" href="/?page=2">2</a>
+                    </li>
+
+                    <li class="page-item">
+                      <a class="page-link" href="/?page=3">3</a>
+                    </li>
+
+                    <li class="page-item">
+                      <a class="page-link" href="/?page=4">4</a>
+                    </li>
+
+                    <li class="page-item">
+                      <a class="page-link" href="/?page=5">5</a>
+                    </li>
+
+                    <li class="page-item disabled"><a href="#" onclick="return false;" class="page-link"><span
+                          class="translation_missing"
+                          title="translation missing: ru.views.pagination.truncate">Truncate</span></a></li>
+                    <li class="page-item">
+                      <a class="page-link" rel="next" href="/?page=2"><span class="translation_missing"
+                          title="translation missing: ru.views.pagination.next">Next</span></a>
+                    </li>
+
+                    <li class="page-item">
+                      <a class="page-link" href="/?page=192"><span class="translation_missing"
+                          title="translation missing: ru.views.pagination.last">Last</span></a>
+                    </li>
+
+                  </ul>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>

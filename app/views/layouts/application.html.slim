@@ -1,5 +1,5 @@
 doctype html
-html
+html.h-100
   head
     title
       | RailsProject65
@@ -8,5 +8,58 @@ html
     = csp_meta_tag
     = stylesheet_link_tag 'application', 'data-turbo-track': 'reload'
     = javascript_include_tag 'application', 'data-turbo-track': 'reload', type: 'module'
-  body
-    = yield
+  body.d-flex.flex-column.h-100
+    .container.mb-2
+      .d-flex.flex-wrap.align-items-center.py-2.border-bottom
+        .navbar.navbar-expand-md.navbar-light.me-auto
+          = link_to 'Доска объявлений', root_path, class: 'navbar-brand me-md-4'
+          #navbarToggler.collapse.navbar-collapse
+            ul.nav.nav-pills.flex-grow-1.navbar-nav.me-auto
+              li.nav-item.me-2 = link_to 'Главная', root_path, class: 'nav-link text-dark'
+        ul.nav.nav-pills
+          li.nav-item.me-2 Логин
+
+  main
+    .mt-4.mb-5.pb-5
+      .container
+        .p-4.align-items-center.border.shadow.bg-white.rounded-3
+          .row
+            .p-3.p-lg-5.pt-lg-0
+              .mb-4
+                h2 Объявления
+                hr
+              .p-3bg-light
+                | ФОРМА ПОИСКА
+              /   <form class="bulletin_search" id="bulletin_search" action="/bulletins" accept-charset="UTF-8"
+              /     method="get">
+              /     <div class="row my-2">
+              /       <div class="col-6">
+              /         <div class="form-group mb-3 string required q_title_cont"><input
+              /             class="form-control string required" type="text" name="q[title_cont]" id="q_title_cont"><small
+              /             class="form-text text-muted">Искать по названию объявления</small></div>
+              /       </div>
+              /       <div class="col-4">
+              /         <div class="form-group mb-3 select required q_category_id_eq"><select
+              /             class="form-control select required" name="q[category_id_eq]" id="q_category_id_eq">
+              /             <option value="" label=" "></option>
+              /             <option value="1">Личные вещи</option>
+              /             <option value="2">Транспорт</option>
+              /             <option value="3">Работа</option>
+              /             <option value="4">Для дома и дачи</option>
+              /             <option value="5">Недвижимость</option>
+              /             <option value="6">Хобби и отдых</option>
+              /             <option value="7">Электроника</option>
+              /             <option value="8">Животные</option>
+              /           </select><small class="form-text text-muted">Выбрать категорию</small></div>
+              /       </div>
+              /       <div class="col-2"><input type="submit" name="commit" value="Искать" class="btn btn-primary me-2"
+              /           data-disable-with="Искать"><a class="btn btn-outline-primary" href="/">Сброс</a></div>
+              /     </div>
+              /   </form>
+              / </div>
+              .row.mt-2
+                = yield
+
+  footer.bg-dark.text-light.mt-auto
+    .container-xl
+      .row.py-2 Хекслет

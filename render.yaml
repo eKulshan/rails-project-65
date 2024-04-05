@@ -1,0 +1,22 @@
+databases:
+  - name: bulletins_board_db
+    databaseName: bulletins_board_db
+    user: blog
+    plan: free
+
+services:
+  - type: web
+    name: bulletins_board
+    runtime: ruby
+    plan: free
+    buildCommand: "./bin/render-build.sh"
+    startCommand: "./bin/render-start.sh"
+    envVars:
+      - key: DATABASE_URL
+        fromDatabase:
+          name: bulletins_board_db
+          property: connectionString
+      - key: RAILS_MASTER_KEY
+        sync: false
+      - key: WEB_CONCURRENCY
+        value: 2 # sensible default

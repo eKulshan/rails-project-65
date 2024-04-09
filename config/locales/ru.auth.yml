@@ -1,0 +1,7 @@
+ru:
+  login:
+    success: 'Вход выполнен.'
+    failure: 'Не удалось войти.'
+  logout:
+    success: 'Выход выполнен.'
+    failure: 'Не удалось выйти.'

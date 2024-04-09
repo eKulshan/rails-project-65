@@ -2,10 +2,13 @@ start:
 	rm -rf tmp/pids/server.pid
 	bin/rails s -b 0.0.0.0
 
-setup: install db-prepare
+setup: prepare-env-file install db-prepare
 
 debug:
 	bundle exec rdbg --open -n -c -- bundle exec rails s
+
+prepare-env-file:
+	cp .env.example .env
 
 install:
 	bin/setup

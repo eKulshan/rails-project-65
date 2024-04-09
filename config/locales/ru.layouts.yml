@@ -1,0 +1,7 @@
+ru:
+  layouts:
+    application:
+      login: 'Войти'
+      logout: 'Выйти'
+      title: 'Доска обьявлений'
+      main: 'Главная'

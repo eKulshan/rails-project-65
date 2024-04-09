@@ -1,0 +1,14 @@
+- if flash.any?
+  - flash.each do |type, msg|
+    - case type
+    - when 'alert'
+      .alert.alert-info
+        = msg
+    - when 'notice'
+      .alert.alert-success
+        = msg
+    - when 'error'
+      .alert.alert-danger
+        = msg
+    - else
+      p = "Unhandled notice: #{type} - #{msg}"

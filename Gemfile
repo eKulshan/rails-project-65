@@ -45,16 +45,15 @@ gem 'bootsnap', require: false
 
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
 # gem "image_processing", "~> 1.2"
-gem 'ancestry', '~> 4.3'
-gem 'devise', '~> 4.9'
-gem 'devise-i18n', '~> 1.12'
+gem 'omniauth-github'
+gem 'omniauth-rails_csrf_protection'
 gem 'simple_form', '~> 5.3'
 gem 'slim-rails'
 
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem 'debug', platforms: %i[mri windows]
-  gem 'dotenv'
+  gem 'dotenv-rails'
   gem 'faker'
   gem 'rubocop'
   gem 'rubocop-performance'

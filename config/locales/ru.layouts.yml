@@ -1,7 +1,15 @@
 ru:
+  web:
+    bulletins:
+      new:
+        title: 'Добавить объявление'
+      index:
+        title: 'Обьявления'
   layouts:
-    application:
-      login: 'Войти'
-      logout: 'Выйти'
-      title: 'Доска обьявлений'
-      main: 'Главная'
+    web:
+      application:
+        login: 'Войти'
+        logout: 'Выйти'
+        title: 'Доска обьявлений'
+        main: 'Главная'
+        new_bulletin: 'Добавить'

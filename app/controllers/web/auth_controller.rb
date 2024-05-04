@@ -8,14 +8,14 @@ class Web::AuthController < ApplicationController
 
     if @user.persisted?
       session[:user_id] = @user.id
-      redirect_to root_path, notice: I18n.t('.login.success')
+      redirect_to root_path, flash: { success: I18n.t('.auth.sign_in.success') }
     else
-      redirect_to root_path, alert: I18n.t('.login.success')
+      redirect_to root_path, flash: { error: I18n.t('.auth.sign_in.failure') }
     end
   end
 
   def destroy
     session[:user_id] = nil
-    redirect_to root_path, notice: I18n.t('.logout.success')
+    redirect_to root_path, flash: { success: I18n.t('.auth.logout.success') }
   end
 end

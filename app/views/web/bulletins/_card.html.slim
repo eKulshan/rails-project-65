@@ -1,0 +1,8 @@
+.col-3.pt-2
+  .card.shadow-sm
+    = image_tag bulletin.image.variant(resize_to_fit: [200, 200]), height: 200, class: 'card-img-top x-object-fit-cover'
+    .card-body
+      = link_to bulletin do
+        h5.card-title = bulletin.title
+      h6.card-subtitle.mb-2.text-muted
+        = time_ago_in_words bulletin.created_at

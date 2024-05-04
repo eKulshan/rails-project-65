@@ -29,3 +29,12 @@ en:
     # prompts:
     #   defaults:
     #     age: 'Select your age'
+    bulletin:
+      actions:
+        create: 'Create bulletin'
+
+ru:
+  simple_form:
+    bulletin:
+      actions:
+        create: 'Создать обьявление'

@@ -1,0 +1,6 @@
+= simple_form_for(@bulletin) do |f|
+    = f.input :title
+    = f.input :description, as: 'text', input_html: { rows: 2 }
+    = f.association :category, required: true
+    = f.input :image, required: true
+    = f.button :submit, t('simple_form.bulletin.actions.create'), class: 'mt-4 btn btn-primary'

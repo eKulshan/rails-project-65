@@ -1,0 +1,24 @@
+first_bulletin_image_attachment:
+  name: image
+  record: first (Bulletin)
+  blob: first_image_blob
+second_bulletin_image_attachment:
+  name: image
+  record: second (Bulletin)
+  blob: second_image_blob
+third_bulletin_image_attachment:
+  name: image
+  record: third (Bulletin)
+  blob: third_image_blob
+fourth_bulletin_image_attachment:
+  name: image
+  record: fourth (Bulletin)
+  blob: first_image_blob
+fifth_bulletin_image_attachment:
+  name: image
+  record: fifth (Bulletin)
+  blob: second_image_blob
+sixth_bulletin_image_attachment:
+  name: image
+  record: sixth (Bulletin)
+  blob: third_image_blob

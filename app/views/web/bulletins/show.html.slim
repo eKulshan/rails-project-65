@@ -1,0 +1,16 @@
+.p-4.align-items-center.border.shadow.bg-white.rounded-3
+  .row
+    .p-3.p-lg-5.pt-lg-0
+      .mb-4
+        / TODO - translate
+        h2 = @bulletin.title
+        hr
+      .row.mt-2
+        == render @bulletin
+
+/ div
+/   => link_to "Edit this bulletin", edit_web_bulletin_path(@web_bulletin)
+/   '|
+/   =< link_to "Back to bulletins", web_bulletins_path
+
+/   = button_to "Destroy this bulletin", @web_bulletin, method: :delete

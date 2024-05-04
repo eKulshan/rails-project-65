@@ -4,6 +4,8 @@ source 'https://rubygems.org'
 
 ruby '3.2.2'
 
+gem 'dotenv-rails'
+
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem 'rails', '~> 7.1.3', '>= 7.1.3.2'
 
@@ -44,7 +46,7 @@ gem 'tzinfo-data', platforms: %i[windows jruby]
 gem 'bootsnap', require: false
 
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
-# gem "image_processing", "~> 1.2"
+gem 'image_processing', '~> 1.2'
 gem 'omniauth-github'
 gem 'omniauth-rails_csrf_protection'
 gem 'simple_form', '~> 5.3'
@@ -52,8 +54,8 @@ gem 'slim-rails'
 
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
+  gem 'annotate'
   gem 'debug', platforms: %i[mri windows]
-  gem 'dotenv-rails'
   gem 'faker'
   gem 'rubocop'
   gem 'rubocop-performance'
@@ -81,5 +83,8 @@ group :test do
 end
 
 group :production do
+  gem 'aws-sdk-s3'
   gem 'pg'
 end
+
+gem 'active_storage_validations', '~> 1.1'

@@ -1,11 +1,14 @@
 - if flash.any?
   - flash.each do |type, msg|
     - case type
+    - when 'success'
+      .alert.alert-success
+        = msg
     - when 'alert'
-      .alert.alert-info
+      .alert.alert-warning
         = msg
     - when 'notice'
-      .alert.alert-success
+      .alert.alert-primary
         = msg
     - when 'error'
       .alert.alert-danger

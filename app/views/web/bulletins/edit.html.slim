@@ -1,0 +1,10 @@
+h1 Editing bulletin
+
+== render "form", web_bulletin: @web_bulletin
+
+br
+
+div
+  => link_to "Show this bulletin", @web_bulletin
+  '|
+  =< link_to "Back to bulletins", web_bulletins_path

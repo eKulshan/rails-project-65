@@ -1,4 +1,11 @@
 ru:
+  flash:
+    bulletin:
+      create: 'Обьявление успешно создано'
+    category:
+        create: 'Категория успешно создана'
+        destroy: 'Категория успешно удалена'
+        update: 'Категория успешно обновлена'
   web:
     bulletins:
       new:
@@ -13,3 +20,4 @@ ru:
         title: 'Доска обьявлений'
         main: 'Главная'
         new_bulletin: 'Добавить'
+        admin: 'Админка'

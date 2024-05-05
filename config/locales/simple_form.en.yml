@@ -32,8 +32,18 @@ en:
     bulletin:
       actions:
         create: 'Create bulletin'
+    category:
+      actions:
+        create: 'Create bulletin'
 
 ru:
+  helpers:
+    submit:
+      create: 'Создать'
+      update: 'Сохранить'
+      category:
+        create: 'Создать категорию'
+        update: 'Сохранить категорию'
   simple_form:
     bulletin:
       actions:

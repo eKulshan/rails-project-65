@@ -10,5 +10,5 @@
 #  updated_at :datetime         not null
 #
 class Category < ApplicationRecord
-  validates :name, length: { minimum: 3, maximum: 30 }
+  validates :name, presence: true, length: { minimum: 3, maximum: 30 }
 end

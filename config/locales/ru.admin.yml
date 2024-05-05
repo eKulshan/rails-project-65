@@ -1,0 +1,35 @@
+ru:
+  web:
+    admin:
+      nav:
+        bulletins_moderation_link: 'Объявления на модерации'
+        bulletins_all_link: 'Все объявления'
+        categories_all_link: 'Все категории'
+      admin:
+        index:
+          title: 'Объявления на модерации'
+          table:
+            title: 'Название'
+            created: 'Дата создания'
+            actions: 'Действия'
+      bulletins:
+        index:
+          title: 'Объявления'
+          table:
+            title: 'Название'
+            state: 'Состояние'
+            created: 'Дата создания'
+            actions: 'Действия'
+      categories:
+        index:
+          new_category_link: 'Добавить категорию'
+          title: 'Категории'
+          table:
+            name: 'Название'
+            actions: 'Действия'
+            edit: 'Редактировать'
+            destroy: 'Удалить'
+        new:
+          title: 'Новая категория'
+        edit:
+          title: 'Редактировать категорию'

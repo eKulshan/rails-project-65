@@ -4,19 +4,27 @@ ru:
       blank: не может быть пустым
   activerecord:
     models:
+      category: 
+        zero: 'категорий'
+        one: 'категория'
+        many: 'категорий'
+        few: 'категорий'
+        other: 'категории'
+      bulletin: 'объявление'
       # post:
       #   one: Пост
       #   few: Поста
       #   many: Постов
       #   other: Пост
       # post/comment: Комментарий
-
     attributes:
       bulletin:
         title: 'Заголовок'
         description: 'Описание'
         category: 'Категория'
         image: 'Фотография'
+      category:
+        name: 'Название'
       # user:
       #   email: Email
       #   password: Пароль

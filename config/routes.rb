@@ -7,7 +7,11 @@ Rails.application.routes.draw do
     delete 'auth', to: 'auth#destroy', as: :auth_destroy
 
     root 'bulletins#index'
-
+    namespace :admin do
+      root 'admin#index'
+      resources :categories, except: %i[show]
+      resources :bulletins, only: %i[index]
+    end
     resources :bulletins
   end
 end

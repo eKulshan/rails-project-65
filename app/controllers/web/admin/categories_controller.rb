@@ -4,18 +4,21 @@ class Web::Admin::CategoriesController < Web::Admin::ApplicationController
   before_action :set_category, only: %i[edit update destroy]
 
   def index
+    authorize Category
     @categories = Category.all
   end
 
   def new
+    authorize Category
     @category = Category.new
   end
 
   def edit
-    @category = Category.find(params[:id])
+    authorize @category
   end
 
   def create
+    authorize Category
     @category = Category.new(category_params)
 
     if @category.save
@@ -26,6 +29,7 @@ class Web::Admin::CategoriesController < Web::Admin::ApplicationController
   end
 
   def update
+    authorize @category
     if @category.update(category_params)
       redirect_to admin_categories_path, flash: { success: I18n.t('flash.category.update') }
     else
@@ -34,6 +38,7 @@ class Web::Admin::CategoriesController < Web::Admin::ApplicationController
   end
 
   def destroy
+    authorize @category
     @category.destroy
     redirect_to admin_categories_path, flash: { success: I18n.t('.flash.category.destroy') }
   end

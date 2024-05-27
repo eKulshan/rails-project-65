@@ -88,3 +88,5 @@ group :production do
 end
 
 gem 'active_storage_validations', '~> 1.1'
+
+gem 'pundit', '~> 2.3'

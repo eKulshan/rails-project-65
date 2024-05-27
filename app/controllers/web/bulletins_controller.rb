@@ -5,10 +5,13 @@ class Web::BulletinsController < Web::ApplicationController
   before_action :set_bulletin, only: %i[show]
 
   def index
-    @bulletins = Bulletin.order(created_at: :desc)
+    authorize Bulletin
+    @bulletins = policy_scope(Bulletin).order(created_at: :desc)
   end
 
-  def show; end
+  def show
+    authorize Bulletin
+  end
 
   def new
     @bulletin = current_user.bulletins.build

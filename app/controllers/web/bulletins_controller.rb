@@ -21,7 +21,7 @@ class Web::BulletinsController < Web::ApplicationController
     @bulletin = current_user.bulletins.build(bulletin_params)
 
     if @bulletin.save
-      redirect_to bulletin_url(@bulletin), flash: { success: I18n.t('.create') }
+      redirect_to bulletin_url(@bulletin), flash: { success: I18n.t('flash.bulletin.create') }
     else
       render :new, status: :unprocessable_entity
     end

@@ -31,10 +31,9 @@ html.h-100
               span.bi.bi-github.me-2
                 = t('.login')
   main
-    .mt-4.mb-5.pb-5
-      .container
-        = render 'shared/flash'
-        = yield
+    .container
+      = render 'shared/flash'
+      = yield
 
   footer.bg-dark.text-light.mt-auto
     .container-xl
